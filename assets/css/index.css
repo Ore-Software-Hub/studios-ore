@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("./color.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: 0.3s;
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-studios);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--color-studios);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+footer, header {
+  background-color: var(--color-brilliant-black);
+}
+
+header a{
+  font-size: 1.2em;
+  font-weight: bold;
+}
